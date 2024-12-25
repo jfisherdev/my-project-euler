@@ -4,6 +4,12 @@ import (
 	"slices"
 )
 
+func SolveProblem1() int {
+	limit := 10
+	values := []int{3, 5}
+	return GetMultiplesForValues(limit, values)
+}
+
 func GetMultiplesForValues(limit int, values []int) int {
 	sum := 0
 	var multiples []int
