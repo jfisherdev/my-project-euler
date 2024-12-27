@@ -5,7 +5,7 @@ import (
 )
 
 func SolveProblem1() int {
-	limit := 10
+	limit := 1000
 	values := []int{3, 5}
 	return GetMultiplesForValues(limit, values)
 }

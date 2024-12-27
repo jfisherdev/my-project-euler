@@ -3,4 +3,4 @@ Multi-Lingual Project Euler Solutions Experiment
 
 ## Supported Languages
 
-- Golang
+- Go

@@ -10,6 +10,6 @@ func TestProblem2Solution(t *testing.T) {
 	actual := SolveProblem2()
 
 	if expected != actual {
-		t.Fatalf("Should get %d got %d", expected, actual)
+		t.Fatalf("Should get %d, but got %d", expected, actual)
 	}
 }

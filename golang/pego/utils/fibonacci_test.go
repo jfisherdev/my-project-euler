@@ -1,4 +1,4 @@
-package pego
+package utils
 
 import (
 	"slices"
