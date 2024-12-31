@@ -59,14 +59,14 @@ func IsPrime(n int) (bool, error) {
 
 func Parition(n int) []int {
 	var partitions []int
-	var midpont = n / 2
+	var midpoint = n / 2
 
 	for {
-		if midpont < 2 {
+		if midpoint < 2 {
 			break
 		}
-		partitions = append(partitions, midpont)
-		midpont = midpont / 2
+		partitions = append(partitions, midpoint)
+		midpoint = midpoint / 2
 	}
 
 	return partitions

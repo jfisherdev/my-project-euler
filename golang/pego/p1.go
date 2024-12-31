@@ -20,7 +20,6 @@ func GetMultiplesForValues(limit int, values []int) int {
 				multiples = append(multiples, multipleForValue)
 			}
 		}
-		//sum += getMultiplesForValue(limit, value)
 	}
 
 	for _, multiple := range multiples {
