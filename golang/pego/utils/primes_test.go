@@ -35,6 +35,17 @@ func TestPrimeFactorizationGivenIllegalValue(t *testing.T) {
 	}
 }
 
+func TestNthPrime(t *testing.T) {
+	nth := 100
+
+	expected := 541
+	actual := NthPrime(nth)
+
+	if expected != actual {
+		t.Fatalf("Expected %d but got %d", expected, actual)
+	}
+}
+
 func TestIsPrimeWhenPrime(t *testing.T) {
 	primes := []int{2, 3, 5, 7, 11, 13, 17, 23, 29, 31, 37, 41, 43, 47, 53}
 
@@ -65,15 +76,5 @@ func TestIsPrimeGivenIllegalValue(t *testing.T) {
 		if err == nil {
 			t.Fatalf("%d is not an allowed value", value)
 		}
-	}
-}
-
-func TestPartition(t *testing.T) {
-	expected := []int{}
-
-	actual := Parition(51)
-
-	if !slices.Equal(expected, actual) {
-		t.Fatalf("Expected %d but got %d", expected, actual)
 	}
 }

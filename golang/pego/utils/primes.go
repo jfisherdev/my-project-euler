@@ -28,6 +28,26 @@ func PrimeFactorization(n int) ([]int, error) {
 	return primeFactors, nil
 }
 
+func NthPrime(nth int) int {
+	primeIndex := 0
+	nthPrime := 0
+	n := 1
+	for {
+		isPrime, _ := IsPrime(n)
+
+		if isPrime {
+			nthPrime = n
+			primeIndex++
+		}
+
+		if primeIndex == nth {
+			break
+		}
+		n++
+	}
+	return nthPrime
+}
+
 func IsPrime(n int) (bool, error) {
 
 	if n <= 0 {
@@ -55,19 +75,4 @@ func IsPrime(n int) (bool, error) {
 	}
 
 	return true, nil
-}
-
-func Parition(n int) []int {
-	var partitions []int
-	var midpoint = n / 2
-
-	for {
-		if midpoint < 2 {
-			break
-		}
-		partitions = append(partitions, midpoint)
-		midpoint = midpoint / 2
-	}
-
-	return partitions
 }

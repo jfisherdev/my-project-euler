@@ -1,7 +1,6 @@
 package pego
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -16,7 +15,6 @@ func findLargestPalindrome(min int, max int) int {
 		for j := max; j >= min; j-- {
 			candidate := i * j
 			if isPalindrome(candidate) && candidate > largestPalindrome {
-				fmt.Printf("Found palindrome %d * %d = %d", i, j, candidate)
 				largestPalindrome = candidate
 			}
 		}
