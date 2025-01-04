@@ -25,3 +25,11 @@ go.work.sum
 .env
 
 **/node_modules
+
+.idea/*
+!.idea/gradle.xml
+!.idea/runConfigurations.xml
+!.idea/vcs.xml
+
+pejava/build
+pejava/.gradle
